@@ -3,7 +3,7 @@ package App::ZofCMS::Plugin::RandomBashOrgQuote;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 use WWW::BashOrg;
 
 sub new { bless {}, shift }
@@ -64,6 +64,7 @@ with C<Error:> (in case you wanna mingle with that).
 =head1 AUTHOR
 
 'Zoffix, C<< <'zoffix at cpan.org'> >>
+(L<http://haslayout.net/>, L<http://zoffix.com/>, L<http://zofdesign.com/>)
 
 =head1 BUGS
 
