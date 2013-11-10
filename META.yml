@@ -1,23 +1,25 @@
 ---
-name: App-ZofCMS-Plugin-RandomBashOrgQuote
-version: 0.0102
+abstract: 'tiny plugin to fetch random quotes from http://bash.org/'
 author:
   - "'Zoffix <'zoffix@cpan.org'>"
-abstract: tiny plugin to fetch random quotes from http://bash.org/
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
 build_requires:
   Test::More: 0
-requires:
-  WWW::BashOrg: 0.0101
 configure_requires:
-  Module::Build: 0.34
-provides:
-  App::ZofCMS::Plugin::RandomBashOrgQuote:
-    file: lib/App/ZofCMS/Plugin/RandomBashOrgQuote.pm
-    version: 0.0102
-generated_by: Module::Build version 0.34
+  Module::Build: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
+name: App-ZofCMS-Plugin-RandomBashOrgQuote
+provides:
+  App::ZofCMS::Plugin::RandomBashOrgQuote:
+    file: lib/App/ZofCMS/Plugin/RandomBashOrgQuote.pm
+    version: 0.0103
+requires:
+  WWW::BashOrg: 0.0101
+  perl: 5.006
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.0103

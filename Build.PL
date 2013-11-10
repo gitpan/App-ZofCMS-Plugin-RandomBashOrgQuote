@@ -15,7 +15,9 @@ my $builder = Module::Build->new(
     },
     requires => {
         'WWW::BashOrg' => 0.0101,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'App-ZofCMS-Plugin-RandomBashOrgQuote-*' ],
     create_makefile_pl => 'traditional',
 );
